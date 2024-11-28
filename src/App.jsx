@@ -30,6 +30,10 @@ function App() {
   });
 
   useEffect(() => {
+    document.title = "Heavn One - The world's brightest desk luminaire";
+  }, []);
+
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline({
       scrollTrigger: {
