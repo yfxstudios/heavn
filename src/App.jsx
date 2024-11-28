@@ -326,14 +326,14 @@ function App() {
               className="flex flex-row items-center absolute top-16 left-[50%] translate-x-[-35%] gap-4 w-[200px] bg-none"
               ref={timeContainer}
             >
-              <div className="w-[75px] h-[75px]  bg-[#F9C516] z-10 rounded-full" />
-              <div className="text-[36px] font-medium">
-                <span
-                  ref={time}
-                  // disable decimals
-                >
-                  08
-                </span>
+              <div className="w-[75px] h-[75px] bg-[#F9C516] z-10 rounded-full" />
+              <div
+                className="text-[36px] font-medium bg-none"
+                style={{
+                  background: "none !important",
+                }}
+              >
+                <span ref={time}>08</span>
                 :00
               </div>
             </div>
