@@ -74,10 +74,19 @@ function App() {
       color: "#212121",
     });
 
-    darkTl.to([timeOfDay.current.children], {
-      backgroundColor: "#212121",
-      color: "#f5f5f5",
-    });
+    darkTl.to(
+      [
+        timeOfDay.current.children[1],
+        timeOfDay.current.children[2],
+        timeOfDay.current.children[3],
+        timeOfDay.current.children[4],
+        timeOfDay.current.children[5],
+      ],
+      {
+        backgroundColor: "#212121",
+        color: "#f5f5f5",
+      }
+    );
 
     const darkSun = gsap.timeline({
       scrollTrigger: {
@@ -97,6 +106,21 @@ function App() {
     });
 
     darkTl.add(darkSun);
+
+    const darkTextTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: darkTransition.current,
+        start: "top center",
+        end: "center center",
+        scrub: true,
+      },
+    });
+
+    darkTextTl.to(timeContainer.current.children[1], {
+      color: "#F5F5F5",
+    });
+
+    darkTl.add(darkTextTl);
 
     const animationTl = gsap.timeline({
       scrollTrigger: {
