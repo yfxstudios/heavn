@@ -551,7 +551,7 @@ function App() {
               </div>
             </div>
 
-            <div className="flex flex-row items-center justify-center w-full gap-4 bg-[#f5f5f5] mt-[500vh]">
+            <div className="flex flex-row items-center justify-center w-full gap-4 bg-[#f5f5f5] mt-[200vh]">
               <div className="flex flex-col items-center justify-center w-[50%] py-16">
                 <div className="text-[#18181A] text-[24px] font-medium overflow-hidden">
                   30 days risk-free trial.
