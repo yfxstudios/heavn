@@ -121,7 +121,7 @@ function App() {
       scrollTrigger: {
         trigger: animationFrame.current,
         start: "top top",
-        end: "+=" + window.innerHeight * 5,
+        end: "+=" + window.innerHeight * 2,
         scrub: true,
 
         pin: true,
@@ -154,7 +154,7 @@ function App() {
       scrollTrigger: {
         trigger: animationFrame.current,
         start: "top top",
-        end: "+=" + window.innerHeight * 5,
+        end: "+=" + window.innerHeight * 2,
         scrub: true,
       },
     });
@@ -730,7 +730,7 @@ function App() {
           <div className="w-1/2 items-right justify-end flex">
             <div className="flex flex-col justify-center w-3/4 py-16 gap-4">
               <div className="text-[#F5F5F5] text-[48px] font-semibold overflow-hidden">
-                Technical details.
+                Order now and test it risk-free for 30 days.
               </div>
               <div className="text-[#999999] text-[16px] font-normal w-3/4 overflow-hidden">
                 <span className="text-[#F5F5F5]">
