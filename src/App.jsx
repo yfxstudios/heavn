@@ -12,6 +12,9 @@ function App() {
   const section2 = useRef(null);
 
   const timeOfDay = useRef(null);
+  const timeContainer = useRef(null);
+  const time = useRef(null);
+
   const darkTransition = useRef(null);
 
   const animationFrame = useRef(null);
@@ -71,10 +74,25 @@ function App() {
       color: "#212121",
     });
 
-    darkTl.to([timeOfDay.current.children, sun.current], {
+    darkTl.to([timeOfDay.current.children], {
       backgroundColor: "#212121",
       color: "#f5f5f5",
     });
+
+    const darkSun = gsap.timeline({
+      scrollTrigger: {
+        trigger: darkTransition.current,
+        start: "top center",
+        end: "center center",
+        scrub: true,
+      },
+    });
+
+    darkSun.to(timeContainer.current.children[0], {
+      backgroundColor: "#F5F5F5",
+    });
+
+    darkTl.add(darkSun);
 
     const animationTl = gsap.timeline({
       scrollTrigger: {
@@ -166,6 +184,24 @@ function App() {
       stagger: 0.2,
     });
 
+    const timeTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: timeContainer.current,
+        start: "top center",
+        end: "+=" + window.innerHeight * 2,
+        scrub: true,
+        pin: true,
+      },
+    });
+
+    timeTl.to(time.current, {
+      textContent: 22,
+      duration: 0.5,
+      snap: { textContent: 4 },
+
+      ease: "none",
+    });
+
     return () => {
       tl.kill();
       darkTl.kill();
@@ -173,6 +209,7 @@ function App() {
       animationTextTl.kill();
 
       textReadTl.kill();
+      timeTl.kill();
 
       ScrollTrigger.clearMatchMedia();
     };
@@ -254,9 +291,24 @@ function App() {
           </div>
 
           <div
-            className="flex flex-col w-screen items-center divide-y-[1px] divide-[#d4d4d4]"
+            className="flex flex-col w-screen items-center divide-y-[1px] divide-[#d4d4d4] relative"
             ref={timeOfDay}
           >
+            <div
+              className="flex flex-row items-center absolute top-16 left-[50%] translate-x-[-35%] gap-4 w-[200px]"
+              ref={timeContainer}
+            >
+              <div className="w-[75px] h-[75px]  bg-[#F9C516] z-10 rounded-full" />
+              <div className="text-[36px] font-medium">
+                <span
+                  ref={time}
+                  // disable decimals
+                >
+                  08
+                </span>
+                :00
+              </div>
+            </div>
             <div className="flex flex-row justify-between w-screen">
               <div
                 style={{
