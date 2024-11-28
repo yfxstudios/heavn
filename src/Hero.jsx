@@ -33,7 +33,7 @@ const Hero = () => {
     const heroImgTl = gsap.timeline({
       scrollTrigger: {
         trigger: bg.current,
-        start: "top top",
+        start: "-1 top",
         end: "bottom top",
         scrub: true,
         // markers: true,
