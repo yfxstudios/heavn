@@ -125,7 +125,7 @@ function App() {
       scrollTrigger: {
         trigger: animationFrame.current,
         start: "top top",
-        end: "+=" + window.innerHeight * 5,
+        end: "+=" + window.innerHeight * 2,
         scrub: true,
 
         pin: true,
@@ -158,7 +158,7 @@ function App() {
       scrollTrigger: {
         trigger: animationFrame.current,
         start: "top top",
-        end: "+=" + window.innerHeight * 5,
+        end: "+=" + window.innerHeight * 2,
         scrub: true,
       },
     });
@@ -555,7 +555,7 @@ function App() {
               </div>
             </div>
 
-            <div className="flex flex-row items-center justify-center w-full gap-4 bg-[#f5f5f5] mt-[500vh]">
+            <div className="flex flex-row items-center justify-center w-full gap-4 bg-[#f5f5f5] mt-[200vh]">
               <div className="flex flex-col items-center justify-center w-[50%] py-16">
                 <div className="text-[#18181A] text-[24px] font-medium overflow-hidden">
                   30 days risk-free trial.
@@ -733,8 +733,8 @@ function App() {
           <div className="absolute top-0 left-[50%] translate-x-[-50%]"></div>
           <div className="w-1/2 items-right justify-end flex">
             <div className="flex flex-col justify-center w-3/4 py-16 gap-4">
-              <div className="text-[#F5F5F5] text-[48px] font-semibold overflow-hidden">
-                Technical details.
+              <div className="text-[#F5F5F5] text-[36px] w-1/2 leading-[54px] font-normal overflow-hidden">
+                Order now and test it risk-free for 30 days.
               </div>
               <div className="text-[#999999] text-[16px] font-normal w-3/4 overflow-hidden">
                 <span className="text-[#F5F5F5]">
