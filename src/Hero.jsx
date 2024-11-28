@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {  useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,6 +38,10 @@ const Hero = () => {
         scrub: true,
         // markers: true,
       },
+    });
+
+    heroImgTl.set(heroImg.current, {
+      scale: 1.01,
     });
 
     heroImgTl.to(heroImg.current, {
