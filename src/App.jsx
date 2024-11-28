@@ -88,6 +88,10 @@ function App() {
       },
     });
 
+    gsap.set(timeContainer.current, {
+      background: "none",
+    });
+
     darkSun.to(timeContainer.current.children[0], {
       backgroundColor: "#F5F5F5",
     });
@@ -295,7 +299,7 @@ function App() {
             ref={timeOfDay}
           >
             <div
-              className="flex flex-row items-center absolute top-16 left-[50%] translate-x-[-35%] gap-4 w-[200px]"
+              className="flex flex-row items-center absolute top-16 left-[50%] translate-x-[-35%] gap-4 w-[200px] bg-none"
               ref={timeContainer}
             >
               <div className="w-[75px] h-[75px]  bg-[#F9C516] z-10 rounded-full" />
