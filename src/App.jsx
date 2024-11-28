@@ -729,7 +729,7 @@ function App() {
           <div className="absolute top-0 left-[50%] translate-x-[-50%]"></div>
           <div className="w-1/2 items-right justify-end flex">
             <div className="flex flex-col justify-center w-3/4 py-16 gap-4">
-              <div className="text-[#F5F5F5] text-[48px] w-1/2 leading-[54px] font-normal overflow-hidden">
+              <div className="text-[#F5F5F5] text-[36px] w-1/2 leading-[54px] font-normal overflow-hidden">
                 Order now and test it risk-free for 30 days.
               </div>
               <div className="text-[#999999] text-[16px] font-normal w-3/4 overflow-hidden">
