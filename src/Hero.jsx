@@ -126,7 +126,7 @@ const Hero = () => {
             HEAVN One
           </span>
           <span className="text-[26px] text-white font-medium">
-            Brightens up your monkey
+            Brightens up your workday
             <span className="text-[26px] text-gray-400 font-medium tracking-tighter">
               ,
             </span>
