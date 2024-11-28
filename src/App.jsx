@@ -69,7 +69,11 @@ function App() {
       ease: "none",
     });
 
-    darkTl.set(timeOfDay.current.children, {
+    darkTl.set(timeOfDay.current.children[1],
+      timeOfDay.current.children[2],
+      timeOfDay.current.children[3],
+      timeOfDay.current.children[4],
+      timeOfDay.current.children[5],, {
       backgroundColor: "#F5F5F5",
       color: "#212121",
     });
