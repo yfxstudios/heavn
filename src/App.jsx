@@ -610,7 +610,8 @@ function App() {
           </p>
         </div>
 
-        <div className="flex flex-row items-center justify-center h-screen w-screen gap-4 bg-[#f5f5f5]">
+        <div className="flex flex-row items-center justify-center h-screen w-screen gap-4 bg-[#f5f5f5] relative">
+          <div className="absolute top-0 left-[50%] translate-x-[-50%]"></div>
           <div className="w-1/2 items-right justify-end flex">
             <div className="flex flex-col justify-center w-3/4 py-16 gap-4">
               <div className="text-[#18181A] text-[48px] font-semibold overflow-hidden">
@@ -686,6 +687,265 @@ function App() {
                 >
                   Order now
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="w-screen h-screen"
+          style={{
+            backgroundImage: `url(assets/heavn_0170.avif)`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+
+        <div className="flex flex-row items-center justify-center h-[45vh] w-screen gap-4 bg-[#18181A] relative">
+          <div className="absolute top-0 left-[50%] translate-x-[-50%]"></div>
+          <div className="w-1/2 items-right justify-end flex">
+            <div className="flex flex-col justify-center w-3/4 py-16 gap-4">
+              <div className="text-[#F5F5F5] text-[48px] font-semibold overflow-hidden">
+                Technical details.
+              </div>
+              <div className="text-[#999999] text-[16px] font-normal w-3/4 overflow-hidden">
+                <span className="text-[#F5F5F5]">
+                  97% of all testers are already convinced.{" "}
+                </span>
+                Try out HEAVN One for 30 days without obligation. Order
+                risk-free in our online shop with our money-back guarantee, if
+                you&apos;re not happy
+              </div>
+
+              <div
+                className={`flex text-[15px] bg-[#F5F5F5] rounded-lg px-3 py-[10px] text-[#18181A] text-nowrap justify-center align-center w-[110px] mt-5 cursor-pointer`}
+              >
+                Order now
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2 items-right flex">
+            <div className="flex flex-col justify-center items-right w-3/4 py-16">
+              <div className="flex flex-col w-4/5">
+                <div className="text-[#999999] text-[16px] font-normal overflow-hidden">
+                  <p>
+                    Designed in <span className="text-[#F5F5F5]">Germany</span>
+                  </p>
+                  <div className="relative overflow-hidden">
+                    <a
+                      href="https://youtu.be/i9B3IX-JWOA"
+                      target="_blank"
+                      className="w-full"
+                    >
+                      <div
+                        className="h-[288px] w-[456px] overflow-hidden rounded-lg cursor-pointer relative"
+                        style={{
+                          backgroundImage:
+                            "url(https://i.ytimg.com/vi/i9B3IX-JWOA/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLD3ejw_rfx7tW8ya_zCb1-vowSJmw)",
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                          backgroundRepeat: "no-repeat",
+                        }}
+                      >
+                        <div className="bg-[#F5F5F5] w-[75px] h-[75px] flex flex-row justify-center items-center rounded-full opacity-90 absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            className="size-8"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-[#202021] flex flex-col items-center justify-center h-[30vh] w-screen">
+          <div className="flex flex-col items-center justify-center h-[30vh] max-w-[1400px] gap-16  divide-y-[1px] divide-[#606061]">
+            <div className="flex flex-row gap-36">
+              <div className="flex flex-col gap-4">
+                <div
+                  style={{
+                    backgroundImage: `url("assets/logo.png")`,
+                    backgroundSize: "contain",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    width: "112px",
+                    height: "22px",
+                  }}
+                />
+                <p className="text-[#999999] text-[16px] font-normal">
+                  Website made by{" "}
+                  <span className="text-[#F5F5F5]">
+                    studio<sup>22</sup>
+                  </span>
+                  <br />
+                  Cloned by{" "}
+                  <span className="text-[#F5F5F5]">@MatthewYakligian</span>
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <p className="text-[#F5F5F5] text-[18px] font-medium">
+                  Products
+                </p>
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  HEAVN One
+                </p>
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  HEAVN Pure
+                </p>
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  Find retailer
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <p className="text-[#F5F5F5] text-[18px] font-medium">
+                  Company
+                </p>
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  About us
+                </p>
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  Light knowledge
+                </p>
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  Magazine
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <p className="text-[#F5F5F5] text-[18px] font-medium">More</p>
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  Contact
+                </p>
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  Support
+                </p>
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  Downloads
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <p className="text-[#F5F5F5] text-[18px] font-medium">
+                  Subscribe to the newsletter
+                </p>
+
+                <input
+                  className="w-[300px] h-[40px] rounded-[8px] bg-[#27272A] text-[16px] focus:outline-none font-normal p-4 text-[#F5F5F5]"
+                  placeholder="E-Mail"
+                />
+                <button className="w-[300px] h-[50px] rounded-[8px] bg-[#F5F5F5] text-[16px] p-2 font-normal text-[#18181A]">
+                  Sign up
+                </button>
+              </div>
+            </div>
+
+            <div className="flex flex-row items-center justify-between w-full">
+              <div className="flex flex-row items-center gap-4 mt-4">
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  © 2024 | HEAVN
+                </p>
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  Imprint
+                </p>
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  Privacy Policy
+                </p>
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  Cookie Policy
+                </p>
+                <p className="text-[#F5F5F5] text-[16px] font-normal">
+                  Terms of Service
+                </p>
+              </div>
+
+              <div className="flex flex-row items-center gap-4 mt-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 50 50"
+                  fill="#F5F5F5"
+                  className="size-8"
+                >
+                  <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                </svg>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  className="size-7"
+                >
+                  <g clip-path="url(#clip0_963_5644)">
+                    <path
+                      d="M10 2.76147C12.6719 2.76147 12.9883 2.77319 14.0391 2.82007C15.0156 2.86304 15.543 3.0271 15.8945 3.16382C16.3594 3.34351 16.6953 3.56226 17.043 3.90991C17.3945 4.26147 17.6094 4.59351 17.7891 5.05835C17.9258 5.40991 18.0898 5.94116 18.1328 6.91382C18.1797 7.96851 18.1914 8.28491 18.1914 10.9529C18.1914 13.6248 18.1797 13.9412 18.1328 14.9919C18.0898 15.9685 17.9258 16.4959 17.7891 16.8474C17.6094 17.3123 17.3906 17.6482 17.043 17.9959C16.6914 18.3474 16.3594 18.5623 15.8945 18.7419C15.543 18.8787 15.0117 19.0427 14.0391 19.0857C12.9844 19.1326 12.668 19.1443 10 19.1443C7.32813 19.1443 7.01172 19.1326 5.96094 19.0857C4.98438 19.0427 4.45703 18.8787 4.10547 18.7419C3.64063 18.5623 3.30469 18.3435 2.95703 17.9959C2.60547 17.6443 2.39063 17.3123 2.21094 16.8474C2.07422 16.4959 1.91016 15.9646 1.86719 14.9919C1.82031 13.9373 1.80859 13.6209 1.80859 10.9529C1.80859 8.28101 1.82031 7.9646 1.86719 6.91382C1.91016 5.93726 2.07422 5.40991 2.21094 5.05835C2.39063 4.59351 2.60938 4.25757 2.95703 3.90991C3.30859 3.55835 3.64063 3.34351 4.10547 3.16382C4.45703 3.0271 4.98828 2.86304 5.96094 2.82007C7.01172 2.77319 7.32813 2.76147 10 2.76147ZM10 0.960693C7.28516 0.960693 6.94531 0.972412 5.87891 1.01929C4.81641 1.06616 4.08594 1.23804 3.45313 1.48413C2.79297 1.74194 2.23438 2.08179 1.67969 2.64038C1.12109 3.19507 0.78125 3.75366 0.523438 4.40991C0.277344 5.04663 0.105469 5.77319 0.0585938 6.83569C0.0117188 7.90601 0 8.24585 0 10.9607C0 13.6755 0.0117188 14.0154 0.0585938 15.0818C0.105469 16.1443 0.277344 16.8748 0.523438 17.5076C0.78125 18.1677 1.12109 18.7263 1.67969 19.281C2.23438 19.8357 2.79297 20.1794 3.44922 20.4333C4.08594 20.6794 4.8125 20.8513 5.875 20.8982C6.94141 20.9451 7.28125 20.9568 9.99609 20.9568C12.7109 20.9568 13.0508 20.9451 14.1172 20.8982C15.1797 20.8513 15.9102 20.6794 16.543 20.4333C17.1992 20.1794 17.7578 19.8357 18.3125 19.281C18.8672 18.7263 19.2109 18.1677 19.4648 17.5115C19.7109 16.8748 19.8828 16.1482 19.9297 15.0857C19.9766 14.0193 19.9883 13.6794 19.9883 10.9646C19.9883 8.24976 19.9766 7.90991 19.9297 6.84351C19.8828 5.78101 19.7109 5.05054 19.4648 4.41772C19.2188 3.75366 18.8789 3.19507 18.3203 2.64038C17.7656 2.08569 17.207 1.74194 16.5508 1.48804C15.9141 1.24194 15.1875 1.07007 14.125 1.02319C13.0547 0.972412 12.7148 0.960693 10 0.960693Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M10 5.82397C7.16406 5.82397 4.86328 8.12476 4.86328 10.9607C4.86328 13.7966 7.16406 16.0974 10 16.0974C12.8359 16.0974 15.1367 13.7966 15.1367 10.9607C15.1367 8.12476 12.8359 5.82397 10 5.82397ZM10 14.2927C8.16016 14.2927 6.66797 12.8005 6.66797 10.9607C6.66797 9.12085 8.16016 7.62866 10 7.62866C11.8398 7.62866 13.332 9.12085 13.332 10.9607C13.332 12.8005 11.8398 14.2927 10 14.2927Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M16.5391 5.62085C16.5391 6.28491 16 6.82007 15.3398 6.82007C14.6758 6.82007 14.1406 6.28101 14.1406 5.62085C14.1406 4.95679 14.6797 4.42163 15.3398 4.42163C16 4.42163 16.5391 4.96069 16.5391 5.62085Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_963_5644">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0 0.960693)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  className="size-7"
+                >
+                  <g clip-path="url(#clip0_963_5645)">
+                    <path
+                      d="M20 10.9607C20 5.43784 15.5229 0.960693 10 0.960693C4.47715 0.960693 0 5.43784 0 10.9607C0 15.9519 3.65684 20.089 8.4375 20.8392V13.8513H5.89844V10.9607H8.4375V8.75757C8.4375 6.25132 9.93047 4.86694 12.2146 4.86694C13.3084 4.86694 14.4531 5.06226 14.4531 5.06226V7.52319H13.1922C11.95 7.52319 11.5625 8.29409 11.5625 9.08569V10.9607H14.3359L13.8926 13.8513H11.5625V20.8392C16.3432 20.089 20 15.9519 20 10.9607Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_963_5645">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0 0.960693)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
               </div>
             </div>
           </div>
