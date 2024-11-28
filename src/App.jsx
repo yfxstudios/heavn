@@ -596,7 +596,7 @@ function App() {
 
         <div className="w-screen px-32 py-16 bg-[#F5F5F5] text-[#18181A] flex flex-col items-center">
           <div
-            className="text-[72px] font-semibold max-w-[1400px] leading-[80px] overflow-hidden"
+            className="text-[72px] font-semibold max-w-[1400px] leading-[80px] overflow-hidden no-overflow"
             ref={quote}
           >
             <h1>
