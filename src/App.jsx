@@ -101,10 +101,6 @@ function App() {
       background: "none",
     });
 
-    darkSun.to(timeContainer.current.children[0], {
-      backgroundColor: "#F5F5F5",
-    });
-
     darkTl.add(darkSun);
 
     const darkTextTl = gsap.timeline({
