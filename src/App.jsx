@@ -69,18 +69,6 @@ function App() {
       ease: "none",
     });
 
-    darkTl.set(
-      timeOfDay.current.children[1],
-      timeOfDay.current.children[2],
-      timeOfDay.current.children[3],
-      timeOfDay.current.children[4],
-      timeOfDay.current.children[5],
-      {
-        backgroundColor: "#F5F5F5",
-        color: "#212121",
-      }
-    );
-
     darkTl.to(
       [
         timeOfDay.current.children[1],
@@ -344,6 +332,7 @@ function App() {
                 :00
               </div>
             </div>
+
             <div className="flex flex-row justify-between w-screen">
               <div
                 style={{
