@@ -189,8 +189,7 @@ function App() {
     animationTl.add(animationTextTl);
 
     const text = new SplitType(quote.current.children[0], {
-      types: "chars, lines",
-      linesClass: "line",
+      types: "chars, words",
     });
 
     const textReadTl = gsap.timeline({
@@ -629,7 +628,7 @@ function App() {
             </h1>
           </div>
 
-          <p className="text-[36px] text-[#999999] font-medium w-full max-w-[1300px] mt-8 text-left">
+          <p className="text-[36px] text-[#999999] font-medium w-full max-w-[1400px] mt-8 text-left">
             Frank Thelen, Investor
           </p>
         </div>
